@@ -1,0 +1,7 @@
+searchPath: src/main/resources
+changeLogFile: db/changelogs/001_add_init.sql
+url: jdbc:postgresql://localhost:5432/orders_shard_1
+username: postgres
+password: password
+driver: org.postgresql.Driver
+defaultSchemaName: public

@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: harshal
+
+  liquibase:
+    enabled: false
+
+app:
+  shards:
+    count: 2
+    datasources:
+      shard0:
+        url: jdbc:postgresql://localhost:5432/orders_shard_0
+        username: postgres
+        password: password
+        driver-class-name: org.postgresql.Driver
+      shard1:
+        url: jdbc:postgresql://localhost:5432/orders_shard_1
+        username: postgres
+        password: password
+        driver-class-name: org.postgresql.Driver
